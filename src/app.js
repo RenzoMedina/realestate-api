@@ -1,11 +1,11 @@
 const express = require('express');
 const app = express();
-const inmuebles = [
-{ id: 1, direccion: 'Calle 123', precio: 150000, tipo: 'Apartamento' },
-{ id: 2, direccion: 'Avenida 456', precio: 230000, tipo: 'Casa' },
-{ id: 3, direccion: 'Carrera 789', precio: 120000, tipo: 'Estudio' }
+const estates = [
+{ id: 1, address: 'Calle 123', price: 150000, type: 'Apartamento' },
+{ id: 2, address: 'Avenida 456', price: 230000, type: 'Casa' },
+{ id: 3, address: 'Carrera 789', price: 120000, type: 'Estudio' }
 ];
-app.get('/api/inmuebles', (req, res) => {
-res.json(inmuebles);
+app.get('/api/estates', (req, res) => {
+res.json(estates);
 });
 module.exports = app;
