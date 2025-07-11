@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node: [16.x,18.x, 20.x]
+        node: [18.x, 20.x]
     steps:
       - name: Checkout del código
         uses: actions/checkout@v3
@@ -44,4 +44,14 @@ jobs:
         if: failure()
         run: |
           echo " Falla detectada en los tests para Node ${{ matrix.node }}"
+  
+  #Build and despliegue
+  build:
+    name: Build Api
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Despligue
+        run: |
+          echo "Desplegando...."
 
