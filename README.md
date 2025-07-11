@@ -8,11 +8,6 @@ A modular and scalable API for managing real estate properties, built with **Fas
 ## 🚀 Features
 
 - Full CRUD operations for properties
-- JWT-based authentication
-- Data validation with Pydantic
-- Relational database integration
-- Auto-generated documentation via Swagger (OpenAPI)
-- Dockerized for container-based deployment
 - Automated testing with Pytest
 
 
